@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6D9E2D581F900C2200F762BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D571F900C2200F762BF /* AppDelegate.swift */; };
-		6D9E2D5A1F900C2200F762BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D591F900C2200F762BF /* ViewController.swift */; };
 		6D9E2D5D1F900C2200F762BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E2D5B1F900C2200F762BF /* Main.storyboard */; };
 		6D9E2D5F1F900C2200F762BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E2D5E1F900C2200F762BF /* Assets.xcassets */; };
 		6D9E2D621F900C2200F762BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E2D601F900C2200F762BF /* LaunchScreen.storyboard */; };
 		6D9E2D6D1F900C2200F762BF /* HomepwnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D6C1F900C2200F762BF /* HomepwnerTests.swift */; };
 		6D9E2D781F900C2200F762BF /* HomepwnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D771F900C2200F762BF /* HomepwnerUITests.swift */; };
+		6D9E2D861F9018F000F762BF /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D851F9018F000F762BF /* ItemsViewController.swift */; };
+		6D9E2D881F92801400F762BF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D871F92801400F762BF /* Item.swift */; };
+		6D9E2D8A1F9286F600F762BF /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D891F9286F600F762BF /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		6D9E2D541F900C2200F762BF /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9E2D571F900C2200F762BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D9E2D591F900C2200F762BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D9E2D5C1F900C2200F762BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D9E2D5E1F900C2200F762BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D9E2D611F900C2200F762BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		6D9E2D731F900C2200F762BF /* HomepwnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomepwnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9E2D771F900C2200F762BF /* HomepwnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepwnerUITests.swift; sourceTree = "<group>"; };
 		6D9E2D791F900C2200F762BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D9E2D851F9018F000F762BF /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		6D9E2D871F92801400F762BF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6D9E2D891F9286F600F762BF /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		6D9E2D561F900C2200F762BF /* Homepwner */ = {
 			isa = PBXGroup;
 			children = (
+				6D9E2D871F92801400F762BF /* Item.swift */,
+				6D9E2D891F9286F600F762BF /* ItemStore.swift */,
+				6D9E2D851F9018F000F762BF /* ItemsViewController.swift */,
 				6D9E2D571F900C2200F762BF /* AppDelegate.swift */,
-				6D9E2D591F900C2200F762BF /* ViewController.swift */,
 				6D9E2D5B1F900C2200F762BF /* Main.storyboard */,
 				6D9E2D5E1F900C2200F762BF /* Assets.xcassets */,
 				6D9E2D601F900C2200F762BF /* LaunchScreen.storyboard */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9E2D5A1F900C2200F762BF /* ViewController.swift in Sources */,
+				6D9E2D861F9018F000F762BF /* ItemsViewController.swift in Sources */,
+				6D9E2D881F92801400F762BF /* Item.swift in Sources */,
+				6D9E2D8A1F9286F600F762BF /* ItemStore.swift in Sources */,
 				6D9E2D581F900C2200F762BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YUW7M5MK8;
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannyespina.Homepwner;
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YUW7M5MK8;
 				INFOPLIST_FILE = Homepwner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dannyespina.Homepwner;
