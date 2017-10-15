@@ -16,9 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="1Td-TH-Gys">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5q-QE-UnH">
+                                    <rect key="frame" x="8" y="15" width="175.5" height="30"/>
+                                    <state key="normal" title="Edit"/>
+                                    <connections>
+                                        <action selector="toggleEditingMode:" destination="d2H-dP-KWS" eventType="touchUpInside" id="uMy-QU-Mg5"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBC-vx-16P">
+                                    <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
+                                    <state key="normal" title="Add"/>
+                                    <connections>
+                                        <action selector="addNewItem:" destination="d2H-dP-KWS" eventType="touchUpInside" id="M7f-tU-MEp"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="xBC-vx-16P" firstAttribute="centerY" secondItem="1Td-TH-Gys" secondAttribute="centerY" id="3Z8-lk-Mg9"/>
+                                <constraint firstItem="T5q-QE-UnH" firstAttribute="leading" secondItem="1Td-TH-Gys" secondAttribute="leading" constant="8" id="4af-bh-ED8"/>
+                                <constraint firstItem="T5q-QE-UnH" firstAttribute="centerY" secondItem="1Td-TH-Gys" secondAttribute="centerY" id="GGV-Wb-4V6"/>
+                                <constraint firstItem="xBC-vx-16P" firstAttribute="leading" secondItem="T5q-QE-UnH" secondAttribute="trailing" constant="8" id="nxg-jB-AlP"/>
+                                <constraint firstAttribute="trailing" secondItem="xBC-vx-16P" secondAttribute="trailing" constant="8" id="o59-o6-ARX"/>
+                                <constraint firstItem="xBC-vx-16P" firstAttribute="width" secondItem="T5q-QE-UnH" secondAttribute="width" id="xp5-jT-cZH"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="vG8-Oq-Jd4" detailTextLabel="X4K-Ff-Fb1" style="IBUITableViewCellStyleValue1" id="sPu-Xc-ooP">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPu-Xc-ooP" id="ZDo-5d-z7r">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
