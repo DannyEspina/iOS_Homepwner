@@ -39,6 +39,22 @@ class ItemsViewController: UITableViewController {
             setEditing(true, animated: true)
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // If the triggered segue is the "showItem" segue
+        switch segue.identifier {
+        case "showItem"?:
+            // Figure out which row was just tapped
+            if let row = tableView.indexPathForSelectedRow?.row {
+                
+                // Get the item associated with this row and pass it along
+                let item = itemStore.allItems[row]
+                let detailViewController = segue.destination as! DetailViewController
+                detailViewController.item = item
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
     override func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
         if (proposedDestinationIndexPath.row >= itemStore.allItems.count){
             return sourceIndexPath
@@ -123,6 +139,7 @@ class ItemsViewController: UITableViewController {
           //  cell.backgroundColor = UIColor.clear
             return cell
         } else {
+            cell.isUserInteractionEnabled = false
             cell.textLabel?.text = "No more Items!"
             cell.nameLabel.text = ""
             cell.serialNumberLabel.text = ""
