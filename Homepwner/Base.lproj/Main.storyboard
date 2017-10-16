@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,7 +36,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="xBC-vx-16P" firstAttribute="centerY" secondItem="1Td-TH-Gys" secondAttribute="centerY" id="3Z8-lk-Mg9"/>
                                 <constraint firstItem="T5q-QE-UnH" firstAttribute="leading" secondItem="1Td-TH-Gys" secondAttribute="leading" constant="8" id="4af-bh-ED8"/>
@@ -46,29 +47,47 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="vG8-Oq-Jd4" detailTextLabel="X4K-Ff-Fb1" style="IBUITableViewCellStyleValue1" id="sPu-Xc-ooP">
-                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="65" id="sPu-Xc-ooP" userLabel="ItemCell" customClass="ItemCell" customModule="Homepwner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPu-Xc-ooP" id="ZDo-5d-z7r">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vG8-Oq-Jd4">
-                                            <rect key="frame" x="16" y="12" width="33.5" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hF4-IH-lyN">
+                                            <rect key="frame" x="17" y="6" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X4K-Ff-Fb1">
-                                            <rect key="frame" x="316" y="12" width="44" height="20.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubw-Z4-FB9">
+                                            <rect key="frame" x="17" y="39" width="31" height="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V85-D0-puY">
+                                            <rect key="frame" x="318" y="22" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hF4-IH-lyN" firstAttribute="leading" secondItem="ZDo-5d-z7r" secondAttribute="leading" constant="17" id="0Hy-7m-41Z"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ubw-Z4-FB9" secondAttribute="bottom" constant="0.5" id="H8r-Lj-I4M"/>
+                                        <constraint firstAttribute="trailing" secondItem="V85-D0-puY" secondAttribute="trailing" constant="15" id="QQ0-Hh-Op2"/>
+                                        <constraint firstItem="ubw-Z4-FB9" firstAttribute="top" secondItem="hF4-IH-lyN" secondAttribute="bottom" constant="12" id="Weh-E6-gOw"/>
+                                        <constraint firstItem="ubw-Z4-FB9" firstAttribute="leading" secondItem="hF4-IH-lyN" secondAttribute="leading" id="tFc-St-4cb"/>
+                                        <constraint firstItem="V85-D0-puY" firstAttribute="centerY" secondItem="ZDo-5d-z7r" secondAttribute="centerY" id="vYn-NY-gvw"/>
+                                        <constraint firstItem="hF4-IH-lyN" firstAttribute="top" secondItem="ZDo-5d-z7r" secondAttribute="top" constant="6" id="xTX-LS-6Aq"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="hF4-IH-lyN" id="W5Z-QA-hYn"/>
+                                    <outlet property="serialNumberLabel" destination="ubw-Z4-FB9" id="gOG-OX-W1H"/>
+                                    <outlet property="valueLabel" destination="V85-D0-puY" id="Wqo-L8-q1I"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

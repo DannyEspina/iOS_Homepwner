@@ -99,30 +99,35 @@ class ItemsViewController: UITableViewController {
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
         
-        let imageView = UIImageView(image: UIImage(named: "background"))
-        imageView.alpha = 0.65
-        imageView.contentMode = .scaleAspectFit
-        tableView.backgroundView = imageView
-    }
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row < itemStore.allItems.count {
-            return 60
-        } else {
-            return 44   // For "No more items!"
-        }
+//        let imageView = UIImageView(image: UIImage(named: "background"))
+//        imageView.alpha = 0.65
+//        imageView.contentMode = .scaleAspectFit
+//        tableView.backgroundView = imageView
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 65
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell",for: indexPath) as! ItemCell
         if indexPath.row < itemStore.allItems.count{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell",for: indexPath )
+            
             let item = itemStore.allItems[indexPath.row]
-            cell.textLabel?.text = item.name
-            cell.detailTextLabel?.text = "$" + String(item.valueInDollars)
-            cell.backgroundColor = UIColor.clear
-            return cell;
-        }else{
-            let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell_NMI")
+            // Configure the cell with the Item
+            cell.nameLabel.text = item.name
+            cell.serialNumberLabel.text = item.serialNumber
+            cell.valueLabel.text = "$\(item.valueInDollars)"
+            if item.valueInDollars < 50 {
+                cell.valueLabel.textColor = UIColor.green
+            } else {
+                cell.valueLabel.textColor = UIColor.red
+            }
+          //  cell.backgroundColor = UIColor.clear
+            return cell
+        } else {
             cell.textLabel?.text = "No more Items!"
-            cell.backgroundColor = UIColor.clear
+            cell.nameLabel.text = ""
+            cell.serialNumberLabel.text = ""
+            cell.valueLabel.text = ""
+           // cell.backgroundColor = UIColor.clear
             return cell
             
         }

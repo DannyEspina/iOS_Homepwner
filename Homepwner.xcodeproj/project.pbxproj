@@ -16,6 +16,7 @@
 		6D9E2D861F9018F000F762BF /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D851F9018F000F762BF /* ItemsViewController.swift */; };
 		6D9E2D881F92801400F762BF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D871F92801400F762BF /* Item.swift */; };
 		6D9E2D8A1F9286F600F762BF /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D891F9286F600F762BF /* ItemStore.swift */; };
+		6D9E2D8E1F9426CC00F762BF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D8D1F9426CC00F762BF /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6D9E2D851F9018F000F762BF /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		6D9E2D871F92801400F762BF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6D9E2D891F9286F600F762BF /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		6D9E2D8D1F9426CC00F762BF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				6D9E2D871F92801400F762BF /* Item.swift */,
 				6D9E2D891F9286F600F762BF /* ItemStore.swift */,
 				6D9E2D851F9018F000F762BF /* ItemsViewController.swift */,
+				6D9E2D8D1F9426CC00F762BF /* ItemCell.swift */,
 				6D9E2D571F900C2200F762BF /* AppDelegate.swift */,
 				6D9E2D5B1F900C2200F762BF /* Main.storyboard */,
 				6D9E2D5E1F900C2200F762BF /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				6D9E2D881F92801400F762BF /* Item.swift in Sources */,
 				6D9E2D8A1F9286F600F762BF /* ItemStore.swift in Sources */,
 				6D9E2D581F900C2200F762BF /* AppDelegate.swift in Sources */,
+				6D9E2D8E1F9426CC00F762BF /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
