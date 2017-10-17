@@ -20,6 +20,7 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
     }
     
     @IBAction func takePicture(_ sender: UIBarButtonItem) {
+       
         let imagePicker = UIImagePickerController()
         // If the device has a camera, take a picture; otherwise, just pic from photo library
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -29,9 +30,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationC
         }
         imagePicker.delegate = self
         // Place image picker on the screen
+        
         present(imagePicker, animated: true, completion: nil)
+        
     }
-    
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String: Any]) {
+        // Get picked image from info dictionary
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Put that image on the screen in the image view
+        imageView.image = image
+        
+        // Take image picker off the screen - you must call this dismiss method
+        dismiss(animated: true, completion: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "changeDate"?:

@@ -178,15 +178,15 @@
                                     <constraint firstItem="b0l-jM-jwy" firstAttribute="leading" secondItem="QeG-DK-hAr" secondAttribute="leading" id="4Il-I2-ix2"/>
                                 </constraints>
                             </stackView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-yR-83i">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-md-UbV">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Bat-3K-wyo"/>
+                                    <constraint firstAttribute="height" constant="44" id="AIl-UF-7TC"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="08q-3M-NIa">
+                                    <barButtonItem systemItem="camera" id="4Ql-Fg-jQ0">
                                         <connections>
-                                            <action selector="takePicture:" destination="Fra-uH-hb1" id="sIb-9D-v4b"/>
+                                            <action selector="takePicture:" destination="Fra-uH-hb1" id="aGx-ZZ-5aj"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -197,11 +197,11 @@
                         <constraints>
                             <constraint firstItem="kFc-3g-8f6" firstAttribute="trailing" secondItem="aWu-Ys-h18" secondAttribute="trailing" constant="8" id="I6m-nB-y5y"/>
                             <constraint firstItem="aWu-Ys-h18" firstAttribute="leading" secondItem="kFc-3g-8f6" secondAttribute="leading" constant="8" id="KHV-mL-e8N"/>
+                            <constraint firstItem="n2H-md-UbV" firstAttribute="bottom" secondItem="kFc-3g-8f6" secondAttribute="bottom" id="Qom-mK-tCB"/>
                             <constraint firstItem="aWu-Ys-h18" firstAttribute="top" secondItem="P1H-Rs-mkS" secondAttribute="topMargin" constant="12" id="VW1-X5-471"/>
-                            <constraint firstItem="eDe-yR-83i" firstAttribute="top" secondItem="aWu-Ys-h18" secondAttribute="bottom" constant="8" id="YLZ-6U-As1"/>
-                            <constraint firstItem="eDe-yR-83i" firstAttribute="trailing" secondItem="kFc-3g-8f6" secondAttribute="trailing" id="ajz-q5-fNK"/>
-                            <constraint firstItem="eDe-yR-83i" firstAttribute="leading" secondItem="kFc-3g-8f6" secondAttribute="leading" id="eZz-eu-yCc"/>
-                            <constraint firstItem="eDe-yR-83i" firstAttribute="bottom" secondItem="kFc-3g-8f6" secondAttribute="bottom" id="w3v-Ng-Hvh"/>
+                            <constraint firstItem="n2H-md-UbV" firstAttribute="trailing" secondItem="kFc-3g-8f6" secondAttribute="trailing" id="XTS-E0-Vff"/>
+                            <constraint firstItem="n2H-md-UbV" firstAttribute="top" secondItem="aWu-Ys-h18" secondAttribute="bottom" constant="8" id="a41-tJ-VMi"/>
+                            <constraint firstItem="n2H-md-UbV" firstAttribute="leading" secondItem="kFc-3g-8f6" secondAttribute="leading" id="itf-oz-l3m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kFc-3g-8f6"/>
                         <connections>
@@ -219,7 +219,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMr-d9-Soi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="NRh-cI-gfE">
                     <connections>
-                        <action selector="backgroundTapped:" destination="Fra-uH-hb1" id="Vrk-TT-LRm"/>
+                        <action selector="backgroundTapped:" destination="Fra-uH-hb1" id="Xkp-N7-srZ"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
