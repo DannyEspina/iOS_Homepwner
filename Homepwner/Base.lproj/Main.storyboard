@@ -189,6 +189,12 @@
                                             <action selector="takePicture:" destination="Fra-uH-hb1" id="aGx-ZZ-5aj"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="FEr-QF-0Tp"/>
+                                    <barButtonItem systemItem="trash" id="Fxj-xZ-Wxd">
+                                        <connections>
+                                            <action selector="removePicture:" destination="Fra-uH-hb1" id="XaL-Kx-AKr"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -204,12 +210,10 @@
                             <constraint firstItem="n2H-md-UbV" firstAttribute="leading" secondItem="kFc-3g-8f6" secondAttribute="leading" id="itf-oz-l3m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kFc-3g-8f6"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="NRh-cI-gfE" appends="YES" id="f6P-cK-w9D"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="e8f-SW-Vot" id="i3O-Px-DDK"/>
+                        <outlet property="deleteButton" destination="Fxj-xZ-Wxd" id="Kjt-bi-cpR"/>
                         <outlet property="imageView" destination="ZjI-9q-fg1" id="Rql-gH-IK8"/>
                         <outlet property="nameField" destination="b0l-jM-jwy" id="vn9-53-bce"/>
                         <outlet property="serialNumberField" destination="QeG-DK-hAr" id="TNP-kg-m4c"/>
@@ -217,11 +221,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMr-d9-Soi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="NRh-cI-gfE">
-                    <connections>
-                        <action selector="backgroundTapped:" destination="Fra-uH-hb1" id="Xkp-N7-srZ"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1172" y="61.619190404797607"/>
         </scene>

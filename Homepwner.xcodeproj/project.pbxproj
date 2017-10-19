@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2386E51F980798001971FE /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2386E41F980798001971FE /* ImageStore.swift */; };
 		6D91437E1F95471E00E96B29 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D91437D1F95471E00E96B29 /* DetailViewController.swift */; };
 		6D9E2D581F900C2200F762BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E2D571F900C2200F762BF /* AppDelegate.swift */; };
 		6D9E2D5D1F900C2200F762BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E2D5B1F900C2200F762BF /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D2386E41F980798001971FE /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		6D91437D1F95471E00E96B29 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6D9E2D541F900C2200F762BF /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9E2D571F900C2200F762BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				6DDEA49E1F95B560000F5174 /* DateCreatedViewController.swift */,
 				6D91437D1F95471E00E96B29 /* DetailViewController.swift */,
+				6D2386E41F980798001971FE /* ImageStore.swift */,
 				6D9E2D851F9018F000F762BF /* ItemsViewController.swift */,
 				6DDEA49C1F95B09F000F5174 /* CustomTextField.swift */,
 				6D9E2D871F92801400F762BF /* Item.swift */,
@@ -282,6 +285,7 @@
 				6D9E2D881F92801400F762BF /* Item.swift in Sources */,
 				6D9E2D8A1F9286F600F762BF /* ItemStore.swift in Sources */,
 				6D91437E1F95471E00E96B29 /* DetailViewController.swift in Sources */,
+				6D2386E51F980798001971FE /* ImageStore.swift in Sources */,
 				6D9E2D581F900C2200F762BF /* AppDelegate.swift in Sources */,
 				6D9E2D8E1F9426CC00F762BF /* ItemCell.swift in Sources */,
 				6DDEA49F1F95B560000F5174 /* DateCreatedViewController.swift in Sources */,
